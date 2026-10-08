@@ -1,0 +1,35 @@
+name: Bug
+description: Something behaves differently from the docs, or fails.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Aventara version
+      placeholder: 1.0.0-rc.0
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Node version, package manager, OS
+      placeholder: Node 24.20, npm 11, Ubuntu 24.04
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Commands, config and code, as small as you can make it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Paste the full error text or response body.
+      render: text
+    validations:
+      required: true

@@ -1,0 +1,14 @@
+name: Expected it to exist
+description: A feature, option or doc you looked for and did not find.
+labels: [missing]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you look for?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What were you building when you needed it?
